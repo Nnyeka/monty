@@ -6,7 +6,7 @@
 #include <string.h>
 /**
  * struct globals_s - struct contains global variables.
- * @data: value to initialize nodes.
+ * @data: value to initialize nodes that will be in the node
  * @fp: a file pointer.
  * @lineptr: pointer to a dynamic buffer.
  * @token: a pointer to the next token.
@@ -27,7 +27,7 @@ extern globals_t globals;
  * @next: points to the next element of the stack (or queue)
  *
  * Description: doubly linked list node structure
- * for stack, queues, LIFO, FIFO Holberton project
+ * for stack, queues, LIFO, FIFO
  */
 typedef struct stack_s
 {
@@ -42,7 +42,7 @@ typedef struct stack_s
  * @f: function to handle the opcode
  *
  * Description: opcode and its function
- * for stack, queues, LIFO, FIFO Holberton project
+ * for stack, queues, LIFO, FIFO
  */
 typedef struct instruction_s
 {
@@ -82,4 +82,4 @@ void parse_arg(int argc, char *argv[]);
 void read_line(stack_t **stack);
 void parse_num(stack_t **stack, unsigned int line_number);
 
-#endif /* MONTY_H */
+#endif 
